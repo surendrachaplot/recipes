@@ -80,7 +80,7 @@ def build_index(items):
 </head>
 <body>
   <nav>
-    <span></span>
+    <a class="brand" href="./">Recipe List</a>
     <a class="rss" href="feed.xml">RSS Feed</a>
   </nav>
   <ul class="recipe-list">
