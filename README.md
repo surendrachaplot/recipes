@@ -1,4 +1,4 @@
-# Surendra's Weekly Menu — RSS Feed
+# Weekly Menu — RSS Feed
 
 Heart-healthy weekday dinners. No shellfish. No yoghurt. No eggs.
 

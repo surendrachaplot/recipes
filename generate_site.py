@@ -167,7 +167,7 @@ footer {
 }
 """
 
-NAV = '<nav><a class="brand" href="/">Surendra\'s Weekly Menu</a><a class="rss-link" href="/feed.xml">RSS Feed</a></nav>'
+NAV = '<nav><a class="brand" href="/">Weekly Menu</a><a class="rss-link" href="/feed.xml">RSS Feed</a></nav>'
 
 FOOTER = '<footer>Heart-healthy weekday dinners &mdash; no shellfish, no yoghurt, no eggs.</footer>'
 
@@ -239,13 +239,13 @@ def build_index(items):
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Surendra's Weekly Menu</title>
+  <title>Weekly Menu</title>
   <style>{CSS}</style>
 </head>
 <body>
 {NAV}
 <div class="hero">
-  <h1>Surendra's Weekly Menu</h1>
+  <h1>Weekly Menu</h1>
   <p>Heart-healthy weekday dinners. Fresh, flavourful, and good for your heart.</p>
   <div class="tags">
     <span class="tag">❤️ Heart-healthy</span>
@@ -276,7 +276,7 @@ def build_recipe_page(item, i):
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>{html.escape(item["title"])} — Surendra's Weekly Menu</title>
+  <title>{html.escape(item["title"])} — Weekly Menu</title>
   <style>{CSS}</style>
 </head>
 <body>
