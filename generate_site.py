@@ -75,19 +75,17 @@ def build_index(items):
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Weekly Menu</title>
+  <title>Recipe List</title>
   <style>{CSS}</style>
 </head>
 <body>
   <nav>
-    <a class="brand" href="./">Weekly Menu</a>
+    <a class="brand" href="./">Recipe List</a>
     <a class="rss" href="feed.xml">RSS Feed</a>
   </nav>
-  <h1>Weekly Menu</h1>
-  <p class="subtitle">Heart-healthy weekday dinners &mdash; no yoghurt, no eggs, no shellfish.</p>
+  <h1>Recipe List</h1>
   <ul class="recipe-list">
 {rows}  </ul>
-  <footer>Heart-healthy weekday dinners &mdash; no yoghurt, no eggs, no shellfish.</footer>
 </body>
 </html>"""
 
@@ -100,12 +98,12 @@ def build_recipe_page(item):
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>{strip_day(item["title"])} — Weekly Menu</title>
+  <title>{strip_day(item["title"])} — Recipe List</title>
   <style>{CSS}</style>
 </head>
 <body>
   <nav>
-    <a class="brand" href="../">Weekly Menu</a>
+    <a class="brand" href="../">Recipe List</a>
     <a class="rss" href="../feed.xml">RSS Feed</a>
   </nav>
   <a class="back" href="../">← All Recipes</a>
@@ -114,7 +112,6 @@ def build_recipe_page(item):
   <div class="recipe-body">
     {item["desc"]}
   </div>
-  <footer>Heart-healthy weekday dinners &mdash; no yoghurt, no eggs, no shellfish.</footer>
 </body>
 </html>"""
 
