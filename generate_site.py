@@ -167,7 +167,8 @@ footer {
 }
 """
 
-NAV = '<nav><a class="brand" href="/">Weekly Menu</a><a class="rss-link" href="/feed.xml">RSS Feed</a></nav>'
+NAV_INDEX  = '<nav><a class="brand" href="./">Weekly Menu</a><a class="rss-link" href="feed.xml">RSS Feed</a></nav>'
+NAV_RECIPE = '<nav><a class="brand" href="../">Weekly Menu</a><a class="rss-link" href="../feed.xml">RSS Feed</a></nav>'
 
 FOOTER = '<footer>Heart-healthy weekday dinners &mdash; no shellfish, no yoghurt, no eggs.</footer>'
 
@@ -223,7 +224,7 @@ def build_index(items):
         display = re.sub(r"^(Monday|Tuesday|Wednesday|Thursday|Friday)\s+—\s+", "", item["title"])
         img_url = f"https://source.unsplash.com/600x400/?{kw}"
         cards += f"""
-    <a class="card" href="/recipes/{s}.html">
+    <a class="card" href="recipes/{s}.html">
       <img class="card-img" src="{img_url}" alt="{html.escape(display)}"
            onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
       <div class="card-img-placeholder" style="display:none;background:{grad}">🍽️</div>
@@ -243,7 +244,7 @@ def build_index(items):
   <style>{CSS}</style>
 </head>
 <body>
-{NAV}
+{NAV_INDEX}
 <div class="hero">
   <h1>Weekly Menu</h1>
   <p>Heart-healthy weekday dinners. Fresh, flavourful, and good for your heart.</p>
@@ -280,9 +281,9 @@ def build_recipe_page(item, i):
   <style>{CSS}</style>
 </head>
 <body>
-{NAV}
+{NAV_RECIPE}
 <div class="recipe-page">
-  <a class="back-link" href="/">← All Recipes</a>
+  <a class="back-link" href="../">← All Recipes</a>
   <img class="recipe-hero-img" src="{img_url}" alt="{html.escape(item['title'])}"
        onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
   <div class="recipe-hero-placeholder" style="display:none;background:{grad}">🍽️</div>
