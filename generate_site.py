@@ -35,6 +35,10 @@ footer { margin-top: 3rem; padding-top: 1rem; border-top: 1px solid #ddd; font-s
 """
 
 
+def strip_day(title: str) -> str:
+    return re.sub(r"^(Monday|Tuesday|Wednesday|Thursday|Friday)\s+—\s+", "", title)
+
+
 def slug_from_guid(guid: str) -> str:
     parts = guid.split("-")
     idx = next((i for i, p in enumerate(parts) if p in ("mon","tue","wed","thu","fri")), 3)
@@ -64,7 +68,7 @@ def build_index(items):
     for item in items:
         s    = slug_from_guid(item["guid"])
         date = short_date(item["pub"])
-        rows += f'  <li><a href="recipes/{s}.html">{item["title"]}</a><span class="date">{date}</span></li>\n'
+        rows += f'  <li><a href="recipes/{s}.html">{strip_day(item["title"])}</a><span class="date">{date}</span></li>\n'
 
     return f"""<!DOCTYPE html>
 <html lang="en">
@@ -96,7 +100,7 @@ def build_recipe_page(item):
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>{item["title"]} — Weekly Menu</title>
+  <title>{strip_day(item["title"])} — Weekly Menu</title>
   <style>{CSS}</style>
 </head>
 <body>
@@ -105,7 +109,7 @@ def build_recipe_page(item):
     <a class="rss" href="../feed.xml">RSS Feed</a>
   </nav>
   <a class="back" href="../">← All Recipes</a>
-  <h2>{item["title"]}</h2>
+  <h2>{strip_day(item["title"])}</h2>
   <p class="recipe-date">{date}</p>
   <div class="recipe-body">
     {item["desc"]}
