@@ -222,10 +222,9 @@ def build_index(items):
         date  = short_date(item["pub"])
         # Strip day prefix from display title
         display = re.sub(r"^(Monday|Tuesday|Wednesday|Thursday|Friday)\s+—\s+", "", item["title"])
-        img_url = f"https://source.unsplash.com/600x400/?{kw}"
         cards += f"""
     <a class="card" href="recipes/{s}.html">
-      <img class="card-img" src="{img_url}" alt="{html.escape(display)}"
+      <img class="card-img" src="images/{s}.jpg" alt="{html.escape(display)}"
            onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
       <div class="card-img-placeholder" style="display:none;background:{grad}">🍽️</div>
       <div class="card-body">
@@ -270,8 +269,6 @@ def build_recipe_page(item, i):
     kw    = image_keyword(item["guid"])
     grad  = GRADIENT_FALLBACKS[i % len(GRADIENT_FALLBACKS)]
     date  = short_date(item["pub"])
-    img_url = f"https://source.unsplash.com/1200x600/?{kw}"
-
     return f"""<!DOCTYPE html>
 <html lang="en">
 <head>
@@ -284,7 +281,7 @@ def build_recipe_page(item, i):
 {NAV_RECIPE}
 <div class="recipe-page">
   <a class="back-link" href="../">← All Recipes</a>
-  <img class="recipe-hero-img" src="{img_url}" alt="{html.escape(item['title'])}"
+  <img class="recipe-hero-img" src="../images/{s}.jpg" alt="{html.escape(item['title'])}"
        onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
   <div class="recipe-hero-placeholder" style="display:none;background:{grad}">🍽️</div>
   <div class="recipe-meta">{date}</div>
