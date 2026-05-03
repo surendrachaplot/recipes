@@ -5,7 +5,7 @@ Heart-healthy weekday dinners. No shellfish. No yoghurt. No eggs.
 ## Live Feed URL
 
 ```
-https://YOUR-GITHUB-USERNAME.github.io/healthy-recipes-rss/feed.xml
+https://surendrachaplot.github.io/recipes/feed.xml
 ```
 
 ## Setup (one time)
