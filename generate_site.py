@@ -65,7 +65,7 @@ def parse_feed():
 
 def build_index(items):
     rows = ""
-    for item in items:
+    for item in reversed(items):
         s    = slug_from_guid(item["guid"])
         date = short_date(item["pub"])
         rows += f'  <li><a href="recipes/{s}.html">{strip_day(item["title"])}</a><span class="date">{date}</span></li>\n'
