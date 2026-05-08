@@ -14,15 +14,18 @@ nav .rss:hover { color: #c30; }
 h1 { font-size: 1.6rem; margin-bottom: .25rem; }
 .subtitle { color: #666; font-size: .95rem; margin-bottom: 2rem; }
 ul.recipe-list { list-style: none; }
-ul.recipe-list li { padding: .5rem 0; border-bottom: 1px solid #eee; }
+ul.recipe-list li { padding: .75rem 0; border-bottom: 1px solid #eee; display: flex; align-items: center; gap: 1rem; }
 ul.recipe-list li:last-child { border-bottom: none; }
+ul.recipe-list .thumb { width: 64px; height: 64px; object-fit: cover; border-radius: 6px; flex-shrink: 0; background: #eee; }
+ul.recipe-list .meta { flex: 1; min-width: 0; }
 ul.recipe-list a { text-decoration: none; color: #222; font-size: 1.05rem; }
 ul.recipe-list a:hover { text-decoration: underline; color: #c30; }
-.date { font-size: .8rem; color: #aaa; margin-left: .75rem; }
+.date { display: block; font-size: .8rem; color: #aaa; margin-top: .1rem; }
 .back { display: inline-block; margin-bottom: 2rem; font-size: .9rem; color: #888; text-decoration: none; }
 .back:hover { color: #222; }
 h2 { font-size: 1.5rem; margin-bottom: .25rem; }
-.recipe-date { font-size: .85rem; color: #888; margin-bottom: 2rem; }
+.recipe-date { font-size: .85rem; color: #888; margin-bottom: 1.5rem; }
+.recipe-hero { width: 100%; max-height: 380px; object-fit: cover; border-radius: 8px; margin-bottom: 2rem; display: block; }
 .recipe-body h3 { font-size: 1.1rem; margin: 1.75rem 0 .6rem; }
 .recipe-body ul, .recipe-body ol { padding-left: 1.4rem; }
 .recipe-body li { margin-bottom: .35rem; }
@@ -37,31 +40,31 @@ footer { margin-top: 3rem; padding-top: 1rem; border-top: 1px solid #ddd; font-s
     <a class="rss" href="feed.xml">RSS Feed</a>
   </nav>
   <ul class="recipe-list">
-  <li><a href="recipes/miso-ramen-tofu-bokchoy.html">Miso Ramen with Tofu, Bok Choy & Mushrooms</a><span class="date">05 Jun 2026</span></li>
-  <li><a href="recipes/roasted-veg-lentil-traybake.html">Roasted Vegetable & Lentil Traybake</a><span class="date">04 Jun 2026</span></li>
-  <li><a href="recipes/sardine-caper-pasta.html">Spaghetti with Sardines, Capers & Chili</a><span class="date">03 Jun 2026</span></li>
-  <li><a href="recipes/turkey-farro-stuffed-peppers.html">Ground Turkey & Farro Stuffed Peppers</a><span class="date">02 Jun 2026</span></li>
-  <li><a href="recipes/tuna-nicoise-no-egg.html">Tuna & White Bean Niçoise Salad (No Egg)</a><span class="date">01 Jun 2026</span></li>
-  <li><a href="recipes/thai-peanut-noodles.html">Thai Peanut Noodles with Edamame & Shredded Carrot</a><span class="date">29 May 2026</span></li>
-  <li><a href="recipes/chicken-saag.html">Chicken Saag (Spinach Curry, No Cream)</a><span class="date">28 May 2026</span></li>
-  <li><a href="recipes/teriyaki-salmon-bowl.html">Teriyaki Salmon Bowl with Pickled Cucumber & Brown Rice</a><span class="date">27 May 2026</span></li>
-  <li><a href="recipes/harissa-cauliflower-chickpeas.html">Harissa-Spiced Cauliflower & Chickpea Couscous</a><span class="date">26 May 2026</span></li>
-  <li><a href="recipes/tofu-bokchoy-stir-fry.html">Silken Tofu & Bok Choy Stir-Fry with Ginger-Sesame Sauce</a><span class="date">25 May 2026</span></li>
-  <li><a href="recipes/ginger-trout-soba.html">Ginger-Soy Baked Trout with Sesame Soba Noodles</a><span class="date">22 May 2026</span></li>
-  <li><a href="recipes/lamb-kofta-tabbouleh.html">Spiced Turkey Kofta with Tabbouleh</a><span class="date">21 May 2026</span></li>
-  <li><a href="recipes/sardinian-minestrone-farro.html">Sardinian-Style Minestrone with Farro</a><span class="date">20 May 2026</span></li>
-  <li><a href="recipes/chicken-chimichurri.html">Grilled Chicken Thighs with Chimichurri & Roasted Peppers</a><span class="date">19 May 2026</span></li>
-  <li><a href="recipes/turkish-red-lentil-soup.html">Turkish Red Lentil Soup (Mercimek Çorbası)</a><span class="date">18 May 2026</span></li>
-  <li><a href="recipes/korean-turkey-bowl.html">Korean-Style Ground Turkey Bowl (no egg)</a><span class="date">15 May 2026</span></li>
-  <li><a href="recipes/baked-cod-caponata.html">Baked Cod with Caponata</a><span class="date">14 May 2026</span></li>
-  <li><a href="recipes/black-bean-tacos.html">Black Bean Tacos with Mango Avocado Salsa</a><span class="date">13 May 2026</span></li>
-  <li><a href="recipes/baked-mackerel-tomatoes.html">Baked Mackerel with Roasted Tomatoes & Capers</a><span class="date">12 May 2026</span></li>
-  <li><a href="recipes/red-lentil-dal.html">Red Lentil Dal with Wilted Spinach</a><span class="date">11 May 2026</span></li>
-  <li><a href="recipes/thai-larb.html">Thai Chicken Larb with Brown Rice</a><span class="date">08 May 2026</span></li>
-  <li><a href="recipes/sicilian-tuna-beans.html">Sicilian White Beans with Tuna, Lemon & Chili</a><span class="date">07 May 2026</span></li>
-  <li><a href="recipes/miso-salmon.html">Miso-Glazed Salmon with Sesame Greens</a><span class="date">06 May 2026</span></li>
-  <li><a href="recipes/moroccan-chickpea-harissa.html">Moroccan Chickpea & Harissa Stew</a><span class="date">05 May 2026</span></li>
-  <li><a href="recipes/vietnamese-lemongrass-chicken.html">Vietnamese Lemongrass Chicken Bowl (bún gà nướng)</a><span class="date">04 May 2026</span></li>
+  <li><img class="thumb" src="images/miso-ramen-tofu-bokchoy.jpg" alt="" loading="lazy"><div class="meta"><a href="recipes/miso-ramen-tofu-bokchoy.html">Miso Ramen with Tofu, Bok Choy & Mushrooms</a><span class="date">05 Jun 2026</span></div></li>
+  <li><img class="thumb" src="images/fish-sauce-ginger-chicken.jpg" alt="" loading="lazy"><div class="meta"><a href="recipes/fish-sauce-ginger-chicken.html">Fish Sauce & Ginger Chicken with Bok Choy</a><span class="date">04 Jun 2026</span></div></li>
+  <li><img class="thumb" src="images/miso-glazed-cod-bokchoy.jpg" alt="" loading="lazy"><div class="meta"><a href="recipes/miso-glazed-cod-bokchoy.html">Miso-Glazed Cod with Sesame Bok Choy</a><span class="date">03 Jun 2026</span></div></li>
+  <li><img class="thumb" src="images/lemongrass-tofu-stir-fry.jpg" alt="" loading="lazy"><div class="meta"><a href="recipes/lemongrass-tofu-stir-fry.html">Lemongrass Tofu Stir-Fry with Bok Choy</a><span class="date">02 Jun 2026</span></div></li>
+  <li><img class="thumb" src="images/tahini-miso-cold-soba.jpg" alt="" loading="lazy"><div class="meta"><a href="recipes/tahini-miso-cold-soba.html">Tahini-Miso Cold Soba Bowl</a><span class="date">01 Jun 2026</span></div></li>
+  <li><img class="thumb" src="images/thai-peanut-noodles.jpg" alt="" loading="lazy"><div class="meta"><a href="recipes/thai-peanut-noodles.html">Thai Peanut Noodles with Edamame & Shredded Carrot</a><span class="date">29 May 2026</span></div></li>
+  <li><img class="thumb" src="images/black-bean-avocado-bowl.jpg" alt="" loading="lazy"><div class="meta"><a href="recipes/black-bean-avocado-bowl.html">Black Bean & Avocado Bowl with Lime-Cilantro Slaw</a><span class="date">28 May 2026</span></div></li>
+  <li><img class="thumb" src="images/teriyaki-salmon-bowl.jpg" alt="" loading="lazy"><div class="meta"><a href="recipes/teriyaki-salmon-bowl.html">Teriyaki Salmon Bowl with Pickled Cucumber & Brown Rice</a><span class="date">27 May 2026</span></div></li>
+  <li><img class="thumb" src="images/lemongrass-chicken-soup.jpg" alt="" loading="lazy"><div class="meta"><a href="recipes/lemongrass-chicken-soup.html">Lemongrass Chicken & Rice Vermicelli Soup</a><span class="date">26 May 2026</span></div></li>
+  <li><img class="thumb" src="images/tofu-bokchoy-stir-fry.jpg" alt="" loading="lazy"><div class="meta"><a href="recipes/tofu-bokchoy-stir-fry.html">Silken Tofu & Bok Choy Stir-Fry with Ginger-Sesame Sauce</a><span class="date">25 May 2026</span></div></li>
+  <li><img class="thumb" src="images/ginger-trout-soba.jpg" alt="" loading="lazy"><div class="meta"><a href="recipes/ginger-trout-soba.html">Ginger-Soy Baked Trout with Sesame Soba Noodles</a><span class="date">22 May 2026</span></div></li>
+  <li><img class="thumb" src="images/lamb-kofta-tabbouleh.jpg" alt="" loading="lazy"><div class="meta"><a href="recipes/lamb-kofta-tabbouleh.html">Spiced Turkey Kofta with Tabbouleh</a><span class="date">21 May 2026</span></div></li>
+  <li><img class="thumb" src="images/sardinian-minestrone-farro.jpg" alt="" loading="lazy"><div class="meta"><a href="recipes/sardinian-minestrone-farro.html">Sardinian-Style Minestrone with Farro</a><span class="date">20 May 2026</span></div></li>
+  <li><img class="thumb" src="images/chicken-chimichurri.jpg" alt="" loading="lazy"><div class="meta"><a href="recipes/chicken-chimichurri.html">Grilled Chicken Thighs with Chimichurri & Roasted Peppers</a><span class="date">19 May 2026</span></div></li>
+  <li><img class="thumb" src="images/turkish-red-lentil-soup.jpg" alt="" loading="lazy"><div class="meta"><a href="recipes/turkish-red-lentil-soup.html">Turkish Red Lentil Soup (Mercimek Çorbası)</a><span class="date">18 May 2026</span></div></li>
+  <li><img class="thumb" src="images/korean-turkey-bowl.jpg" alt="" loading="lazy"><div class="meta"><a href="recipes/korean-turkey-bowl.html">Korean-Style Ground Turkey Bowl (no egg)</a><span class="date">15 May 2026</span></div></li>
+  <li><img class="thumb" src="images/baked-cod-caponata.jpg" alt="" loading="lazy"><div class="meta"><a href="recipes/baked-cod-caponata.html">Baked Cod with Caponata</a><span class="date">14 May 2026</span></div></li>
+  <li><img class="thumb" src="images/black-bean-tacos.jpg" alt="" loading="lazy"><div class="meta"><a href="recipes/black-bean-tacos.html">Black Bean Tacos with Mango Avocado Salsa</a><span class="date">13 May 2026</span></div></li>
+  <li><img class="thumb" src="images/baked-mackerel-tomatoes.jpg" alt="" loading="lazy"><div class="meta"><a href="recipes/baked-mackerel-tomatoes.html">Baked Mackerel with Roasted Tomatoes & Capers</a><span class="date">12 May 2026</span></div></li>
+  <li><img class="thumb" src="images/red-lentil-dal.jpg" alt="" loading="lazy"><div class="meta"><a href="recipes/red-lentil-dal.html">Red Lentil Dal with Wilted Spinach</a><span class="date">11 May 2026</span></div></li>
+  <li><img class="thumb" src="images/thai-larb.jpg" alt="" loading="lazy"><div class="meta"><a href="recipes/thai-larb.html">Thai Chicken Larb with Brown Rice</a><span class="date">08 May 2026</span></div></li>
+  <li><img class="thumb" src="images/sicilian-tuna-beans.jpg" alt="" loading="lazy"><div class="meta"><a href="recipes/sicilian-tuna-beans.html">Sicilian White Beans with Tuna, Lemon & Chili</a><span class="date">07 May 2026</span></div></li>
+  <li><img class="thumb" src="images/miso-salmon.jpg" alt="" loading="lazy"><div class="meta"><a href="recipes/miso-salmon.html">Miso-Glazed Salmon with Sesame Greens</a><span class="date">06 May 2026</span></div></li>
+  <li><img class="thumb" src="images/moroccan-chickpea-harissa.jpg" alt="" loading="lazy"><div class="meta"><a href="recipes/moroccan-chickpea-harissa.html">Moroccan Chickpea & Harissa Stew</a><span class="date">05 May 2026</span></div></li>
+  <li><img class="thumb" src="images/vietnamese-lemongrass-chicken.jpg" alt="" loading="lazy"><div class="meta"><a href="recipes/vietnamese-lemongrass-chicken.html">Vietnamese Lemongrass Chicken Bowl (bún gà nướng)</a><span class="date">04 May 2026</span></div></li>
   </ul>
 </body>
 </html>

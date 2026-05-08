@@ -14,15 +14,18 @@ nav .rss:hover { color: #c30; }
 h1 { font-size: 1.6rem; margin-bottom: .25rem; }
 .subtitle { color: #666; font-size: .95rem; margin-bottom: 2rem; }
 ul.recipe-list { list-style: none; }
-ul.recipe-list li { padding: .5rem 0; border-bottom: 1px solid #eee; }
+ul.recipe-list li { padding: .75rem 0; border-bottom: 1px solid #eee; display: flex; align-items: center; gap: 1rem; }
 ul.recipe-list li:last-child { border-bottom: none; }
+ul.recipe-list .thumb { width: 64px; height: 64px; object-fit: cover; border-radius: 6px; flex-shrink: 0; background: #eee; }
+ul.recipe-list .meta { flex: 1; min-width: 0; }
 ul.recipe-list a { text-decoration: none; color: #222; font-size: 1.05rem; }
 ul.recipe-list a:hover { text-decoration: underline; color: #c30; }
-.date { font-size: .8rem; color: #aaa; margin-left: .75rem; }
+.date { display: block; font-size: .8rem; color: #aaa; margin-top: .1rem; }
 .back { display: inline-block; margin-bottom: 2rem; font-size: .9rem; color: #888; text-decoration: none; }
 .back:hover { color: #222; }
 h2 { font-size: 1.5rem; margin-bottom: .25rem; }
-.recipe-date { font-size: .85rem; color: #888; margin-bottom: 2rem; }
+.recipe-date { font-size: .85rem; color: #888; margin-bottom: 1.5rem; }
+.recipe-hero { width: 100%; max-height: 380px; object-fit: cover; border-radius: 8px; margin-bottom: 2rem; display: block; }
 .recipe-body h3 { font-size: 1.1rem; margin: 1.75rem 0 .6rem; }
 .recipe-body ul, .recipe-body ol { padding-left: 1.4rem; }
 .recipe-body li { margin-bottom: .35rem; }
@@ -37,6 +40,7 @@ footer { margin-top: 3rem; padding-top: 1rem; border-top: 1px solid #ddd; font-s
     <a class="rss" href="../feed.xml">RSS Feed</a>
   </nav>
   <a class="back" href="../">← All Recipes</a>
+  <img class="recipe-hero" src="../images/vietnamese-lemongrass-chicken.jpg" alt="Vietnamese Lemongrass Chicken Bowl (bún gà nướng)">
   <h2>Vietnamese Lemongrass Chicken Bowl (bún gà nướng)</h2>
   <p class="recipe-date">04 May 2026</p>
   <div class="recipe-body">
