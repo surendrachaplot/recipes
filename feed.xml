@@ -6,7 +6,7 @@
     <atom:link href="https://surendrachaplot.github.io/recipes/feed.xml" rel="self" type="application/rss+xml" />
     <description>Heart-healthy weekday dinners. No shellfish. No yoghurt. No eggs.</description>
     <language>en-us</language>
-    <lastBuildDate>Thu, 08 May 2026 12:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 13 May 2026 02:18:06 +0000</lastBuildDate>
     <ttl>1440</ttl>
 
 
@@ -853,5 +853,51 @@
       ]]></description>
     </item>
 
+
+    <item>
+      <title>Monday — Goan Mackerel Curry</title>
+      <pubDate>Mon, 18 May 2026 08:00:00 +0000</pubDate>
+      <guid isPermaLink="false">surendra-menu-2026w21-mon-goan-mackerel-curry</guid>
+      <category>Dinner</category>
+      <description><![CDATA[
+        <h2>Goan Mackerel Curry</h2>
+<p><strong>Heart-healthy · No eggs · No shellfish · Low sodium · ~30 min</strong></p>
+<p>Rich in omega-3s, this cuts LDL. Light coconut milk keeps sat fat in check without losing the Goan soul.</p>
+<h3>Ingredients (serves 2)</h3>
+<ul>
+  <li>300g fresh mackerel fillets, cleaned</li>
+  <li>1 medium onion, finely sliced</li>
+  <li>2 ripe tomatoes, chopped</li>
+  <li>1 tsp tamarind paste (dissolved in 2 tbsp water)</li>
+  <li>150ml light coconut milk</li>
+  <li>3 dried Kashmiri red chillies (mild heat, deep colour)</li>
+  <li>4 garlic cloves</li>
+  <li>1-inch ginger</li>
+  <li>1 tsp coriander seeds</li>
+  <li>½ tsp cumin seeds</li>
+  <li>½ tsp turmeric</li>
+  <li>1 tbsp coconut oil</li>
+  <li>8-10 curry leaves</li>
+  <li>Salt — minimal, to taste</li>
+</ul>
+<h3>Method</h3>
+<ol>
+  <li>Grind dried chillies, garlic, ginger, coriander seeds, cumin, and turmeric into a paste with a splash of water.</li>
+  <li>Heat coconut oil in a pan. Add curry leaves and onion; cook until golden (~8 min).</li>
+  <li>Add the ground paste and fry 2–3 min until fragrant.</li>
+  <li>Add tomatoes, cook until soft and oil separates.</li>
+  <li>Pour in light coconut milk and tamarind water. Bring to a gentle simmer.</li>
+  <li>Slide in mackerel fillets. Cook 7–8 min, turning once, until fish is opaque and sauce thickens slightly.</li>
+  <li>Taste and adjust tamarind or salt. Serve with brown rice or roti.</li>
+</ol>
+<h3>Why it works for you</h3>
+<ul>
+  <li>Mackerel omega-3s actively lower LDL and triglycerides</li>
+  <li>Tamarind replaces vinegar — gentler on the gut</li>
+  <li>Light coconut milk = authentic flavour, ~60% less saturated fat</li>
+  <li>Turmeric + ginger — anti-inflammatory combo</li>
+</ul>
+      ]]></description>
+    </item>
   </channel>
 </rss>
